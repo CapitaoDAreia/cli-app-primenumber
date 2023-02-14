@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"cli-app/isprime"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello, world!")
+	n := 2
+
+	_, msg := isprime.IsPrime(n)
+
+	fmt.Println(msg)
 }
