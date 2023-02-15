@@ -1,14 +1,20 @@
 package main
 
 import (
-	"cli-app/isprime"
+	"cli-app/handleinput"
+	"cli-app/introduction"
 	"fmt"
 )
 
 func main() {
-	n := 2
+	introduction.Intro()
+	introduction.Prompt()
 
-	_, msg := isprime.IsPrime(n)
+	doneChan := make(chan bool)
 
-	fmt.Println(msg)
+	go handleinput.ReadUserInput(doneChan)
+	<-doneChan
+	close(doneChan)
+
+	fmt.Println("Goodbye!")
 }
