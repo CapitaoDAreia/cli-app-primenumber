@@ -4,6 +4,7 @@ import (
 	"cli-app/handleinput"
 	"cli-app/introduction"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -12,7 +13,7 @@ func main() {
 
 	doneChan := make(chan bool)
 
-	go handleinput.ReadUserInput(doneChan)
+	go handleinput.ReadUserInput(os.Stdin, doneChan)
 	<-doneChan
 	close(doneChan)
 

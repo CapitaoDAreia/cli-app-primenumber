@@ -4,11 +4,11 @@ import (
 	"bufio"
 	"cli-app/introduction"
 	"fmt"
-	"os"
+	"io"
 )
 
-func ReadUserInput(doneChan chan bool) {
-	scanner := bufio.NewScanner(os.Stdin)
+func ReadUserInput(in io.Reader, doneChan chan bool) {
+	scanner := bufio.NewScanner(in)
 
 	for {
 		res, done := CheckNumbers(scanner)
