@@ -7,3 +7,14 @@ cli-app/isprime/isprime.go:6.22,8.3 1 1
 cli-app/isprime/isprime.go:10.11,12.3 1 1
 cli-app/isprime/isprime.go:14.28,15.15 1 1
 cli-app/isprime/isprime.go:15.15,17.4 1 1
+cli-app/introduction/intro.go:5.14,9.2 3 1
+cli-app/introduction/prompt.go:5.15,7.2 1 1
+cli-app/handleinput/checkNumbers.go:10.58,13.44 2 1
+cli-app/handleinput/checkNumbers.go:17.2,18.16 2 1
+cli-app/handleinput/checkNumbers.go:22.2,24.19 2 1
+cli-app/handleinput/checkNumbers.go:13.44,15.3 1 1
+cli-app/handleinput/checkNumbers.go:18.16,20.3 1 1
+cli-app/handleinput/handleinput.go:10.54,13.6 2 1
+cli-app/handleinput/handleinput.go:13.6,15.11 2 1
+cli-app/handleinput/handleinput.go:19.3,20.24 2 1
+cli-app/handleinput/handleinput.go:15.11,17.4 1 1
